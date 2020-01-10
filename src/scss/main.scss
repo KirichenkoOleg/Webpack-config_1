@@ -1,11 +1,17 @@
 
-@import "_custom";
-@import "~bootstrap/scss/bootstrap";
+@import "custom";
+@import "bootstrap";
+//@import "~bootstrap/scss/bootstrap";// ~ означает ссылку на node_modules и подкл. бутстрап целиком, используется только для импорта sass файлов
+//с помощю файла _bootstrap.scss можно выборочно импортировать нужные модули из бутстрап и таким образом регулировать размер выходного файла
 
 body {
     background: url('../img/Hero-bg.png') no-repeat center;
 }
 .title {
     color: $title-color;
-    text-decoration: underline;
+    font-family: $primary-font;
+    // text-decoration: underline;
+}
+.title_font-theme {
+    font-family: $secondary-font;
 }
